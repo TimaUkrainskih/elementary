@@ -13,6 +13,7 @@ class FitTest {
         double out = Fit.manWeight(in);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
+
     @Test
     void whenMan187Then100dot05() {
         short in = 187;
@@ -28,13 +29,16 @@ class FitTest {
         double out = Fit.womanWeight(in);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
+
     @Test
     void whenWoman182Then82dot8() {
         short in = 182;
         double expected = 82.8;
         double out = Fit.womanWeight(in);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
+
     }
+
     @Test
     void whenWoman170Then69() {
         short in = 170;

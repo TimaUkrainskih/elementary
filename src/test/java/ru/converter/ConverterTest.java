@@ -24,15 +24,16 @@ class ConverterTest {
     }
 
     @Test
-    void whenConvert200RblThen2Euro(){
+    void whenConvert200RblThen2Euro() {
         float in = 200;
         float expected = 2;
         float out = Converter.rubleToEuro(in);
         float eps = 0.0001f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
+
     @Test
-    void whenConvert180RblThen1dot8Euro(){
+    void whenConvert180RblThen1dot8Euro() {
         float in = 180;
         float expected = 1.8f;
         float out = Converter.rubleToEuro(in);
