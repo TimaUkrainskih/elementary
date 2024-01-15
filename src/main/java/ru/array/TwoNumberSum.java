@@ -4,7 +4,7 @@ public class TwoNumberSum {
     public static int[] getIndexes(int[] array, int target) {
         int i = 0;
         int j = array.length - 1;
-        while (i <= array.length / 2 || j >= array.length / 2) {
+        while (i <= array.length / 2) {
             int sum = array[i] + array[j];
             if (sum == target) {
                 return new int[]{i, j};
